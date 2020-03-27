@@ -1,0 +1,31 @@
+name: CORONAVIRUS
+version: 1.0-BETA
+main: com.HystelDKL.coronavirus
+api-version: 1.13
+prefix: CORONAVIRUS
+authors: [Hystel_Studios]
+description: This is first plugin by Hystel Studios! This plugin is not supposed to bring fear and anxiety! I just didn't have any ideas on what to do... So i did this. Btw i got the inspiration from ItsJerryAndHarry. They did it first, but i wanted to recreate it so everyone could play!
+
+permissions:
+  coronavirus.*:
+    description: Gives access to all coronavirus commands!
+    children:
+        coronavirus.infect: true
+        coronavirus.uninfect: true
+  coronavirus.infect:
+    description: Allows you to infect yourself!
+    default: op
+  coronavirus.uninfect:
+    description: Allows you to uninfect yourself!
+    default: op
+commands:
+  uninfect:
+    description: This command is used to uninfect yourself! Currently you can't uninfect other players!
+    usage: /uninfect
+    permission: coronavirus.uninfect
+    permission-message: You are not allowed to use that!!!
+  infect:
+    description: This command is used to infect yourself! Idk why you want that, but okay! Currently you can't infect other players!
+    usage: /infect
+    permission: coronavirus.infect
+    permission-message: You are not allowed to use that!!!
